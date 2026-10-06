@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nova — Build beautiful products faster with the all-in-one platform for modern teams." />
+  <title>Nova — Build Beautiful Products Faster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Nova home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Nova</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-glow glow-1" aria-hidden="true"></div>
+      <div class="hero-glow glow-2" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="badge">🚀&nbsp; Introducing Nova 2.0</span>
+          <h1>Build <span class="gradient-text">beautiful products</span> faster than ever</h1>
+          <p class="lead">
+            The all-in-one platform that helps modern teams design, ship, and scale
+            delightful experiences — without the busywork.
+          </p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="#features" class="btn btn-ghost btn-lg">See how it works</a>
+          </div>
+          <div class="hero-meta">
+            <div class="avatars" aria-hidden="true">
+              <span class="avatar" style="--i:0">A</span>
+              <span class="avatar" style="--i:1">M</span>
+              <span class="avatar" style="--i:2">S</span>
+              <span class="avatar" style="--i:3">J</span>
+            </div>
+            <p>Loved by <strong>12,000+</strong> makers · ⭐ 4.9/5 average rating</p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-2" aria-hidden="true">
+          <div class="glass-card">
+            <div class="card-dots"><i></i><i></i><i></i></div>
+            <div class="mini-stats">
+              <div class="stat">
+                <span class="stat-label">Revenue</span>
+                <span class="stat-value" data-count="128400" data-prefix="$">$0</span>
+                <span class="stat-trend up">▲ 24.6%</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Active users</span>
+                <span class="stat-value" data-count="9821">0</span>
+                <span class="stat-trend up">▲ 12.1%</span>
+              </div>
+            </div>
+            <div class="chart">
+              <svg viewBox="0 0 320 120" preserveAspectRatio="none" role="img" aria-label="Growth chart">
+                <defs>
+                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(124, 92, 255, 0.45)" />
+                    <stop offset="100%" stop-color="rgba(124, 92, 255, 0)" />
+                  </linearGradient>
+                  <linearGradient id="lineStroke" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#7c5cff" />
+                    <stop offset="100%" stop-color="#22d3ee" />
+                  </linearGradient>
+                </defs>
+                <path class="chart-area" d="M0,100 C40,90 60,60 90,64 C120,68 140,30 175,38 C210,46 230,20 265,16 C290,13 305,10 320,6 L320,120 L0,120 Z" fill="url(#areaFill)" />
+                <path class="chart-line" d="M0,100 C40,90 60,60 90,64 C120,68 140,30 175,38 C210,46 230,20 265,16 C290,13 305,10 320,6" fill="none" stroke="url(#lineStroke)" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="float-chip chip-1">✅ Deployed to production</div>
+            <div class="float-chip chip-2">⚡ 3× faster releases</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOGOS ============ -->
+    <section class="logos" aria-label="Trusted by">
+      <div class="container">
+        <p class="logos-title reveal">Trusted by teams at world-class companies</p>
+        <div class="logos-row reveal delay-1">
+          <span class="logo-item">Vertex</span>
+          <span class="logo-item">Northwind</span>
+          <span class="logo-item">Quantum</span>
+          <span class="logo-item">Hexaflow</span>
+          <span class="logo-item">Nimbus</span>
+          <span class="logo-item">Orbital</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to <span class="gradient-text">ship with confidence</span></h2>
+          <p>Powerful building blocks that stay out of your way, so your team can focus on what matters.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon i-purple">⚡</div>
+            <h3>Blazing fast</h3>
+            <p>Edge-rendered and optimized by default. Your users get instant loads, anywhere in the world.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="feature-icon i-cyan">🎨</div>
+            <h3>Design system ready</h3>
+            <p>Beautiful, accessible components that match your brand — fully themeable down to the pixel.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon i-pink">🔒</div>
+            <h3>Secure by default</h3>
+            <p>SOC 2 compliant with SSO, audit logs, and end-to-end encryption built in from day one.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon i-amber">📊</div>
+            <h3>Insightful analytics</h3>
+            <p>Understand behavior with privacy-friendly dashboards that surface what actually moves the needle.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="feature-icon i-green">🤝</div>
+            <h3>Real-time collaboration</h3>
+            <p>Comment, edit, and review together — multiplayer editing with zero conflicts, ever.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon i-blue">🔌</div>
+            <h3>Integrates with everything</h3>
+            <p>Connect Slack, GitHub, Figma, and 100+ tools with one-click integrations and an open API.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Loved by teams <span class="gradient-text">around the world</span></h2>
+          <p>Don't take our word for it — here's what builders say about Nova.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <figure class="testimonial reveal">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>Nova cut our time-to-market in half. It's the first tool the whole team actually enjoys using.</blockquote>
+            <figcaption>
+              <span class="avatar sm" style="--i:0">A</span>
+              <span><strong>Ava Chen</strong><small>Head of Product, Vertex</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial featured reveal delay-1">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>We replaced four separate tools with Nova. The ROI was obvious within the first week — our engineers ship faster and stress less.</blockquote>
+            <figcaption>
+              <span class="avatar sm" style="--i:1">M</span>
+              <span><strong>Marcus Reid</strong><small>CTO, Northwind Labs</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal delay-2">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>The attention to detail is unreal. Every interaction feels polished and considered. Our conversion rate jumped 32%.</blockquote>
+            <figcaption>
+              <span class="avatar sm" style="--i:2">S</span>
+              <span><strong>Sofia Marino</strong><small>Design Lead, Quantum</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple pricing that <span class="gradient-text">scales with you</span></h2>
+          <p>Start free. Upgrade when you're ready. No hidden fees, cancel anytime.</p>
+
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <span id="labelMonthly" class="active">Monthly</span>
+            <button class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+              <span class="knob"></span>
+            </button>
+            <span id="labelAnnual">Annual <em class="save-tag">Save 20%</em></span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price-desc">For side projects and experiments.</p>
+            <div class="price"><span class="amount" data-monthly="0" data-annual="0">$0</span><span class="period">/mo</span></div>
+            <ul class="price-features">
+              <li>Up to 3 projects</li>
+              <li>Community support</li>
+              <li>Basic analytics</li>
+              <li>1 GB storage</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Get started</a>
+          </article>
+
+          <article class="price-card popular reveal delay-1">
+            <span class="popular-tag">Most popular</span>
+            <h3>Pro</h3>
+            <p class="price-desc">For growing teams shipping fast.</p>
+            <div class="price"><span class="amount" data-monthly="29" data-annual="23">$29</span><span class="period">/mo</span></div>
+            <ul class="price-features">
+              <li>Unlimited projects</li>
+              <li>Priority support</li>
+              <li>Advanced analytics</li>
+              <li>100 GB storage</li>
+              <li>Custom domains</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Start free trial</a>
+          </article>
+
+          <article class="price-card reveal delay-2">
+            <h3>Enterprise</h3>
+            <p class="price-desc">For organizations at scale.</p>
+            <div class="price"><span class="amount" data-monthly="99" data-annual="79">$99</span><span class="period">/mo</span></div>
+            <ul class="price-features">
+              <li>Everything in Pro</li>
+              <li>SSO &amp; audit logs</li>
+              <li>Dedicated success manager</li>
+              <li>Unlimited storage</li>
+              <li>99.99% uptime SLA</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions? <span class="gradient-text">Answered.</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is there a free trial?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Every plan comes with a 14-day free trial of all Pro features. No credit card required to get started.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I change plans later?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Upgrade, downgrade, or cancel at any time from your dashboard. Changes are prorated automatically.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you offer discounts for startups?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — early-stage startups (under $1M funding) get 50% off their first year of Pro. Just reach out to our team.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>What kind of support do you provide?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>All plans include community and email support. Pro plans get priority response times, and Enterprise adds a dedicated success manager.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <h2>Ready to build something <span class="gradient-text">amazing?</span></h2>
+          <p>Join 12,000+ teams already shipping faster with Nova. Free for 14 days.</p>
+          <form class="cta-form" id="ctaForm" novalidate>
+            <label class="sr-only" for="emailInput">Work email</label>
+            <input type="email" id="emailInput" placeholder="you@company.com" autocomplete="email" required />
+            <button type="submit" class="btn btn-primary btn-lg">Get started free</button>
+          </form>
+          <p class="cta-note" id="ctaNote">No credit card required · Cancel anytime</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">Nova</span>
+          </a>
+          <p>Build beautiful products faster. Made with care for modern teams.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Product">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#hero">Changelog</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company">
+          <h4>Company</h4>
+          <a href="#hero">About</a>
+          <a href="#hero">Blog</a>
+          <a href="#hero">Careers</a>
+          <a href="#hero">Contact</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <a href="#hero">Privacy</a>
+          <a href="#hero">Terms</a>
+          <a href="#hero">Security</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Nova Inc. All rights reserved.</p>
+        <div class="socials">
+          <a href="#hero" aria-label="Twitter">𝕏</a>
+          <a href="#hero" aria-label="GitHub">⌂</a>
+          <a href="#hero" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
